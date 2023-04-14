@@ -126,6 +126,10 @@ main section code {
         overflow-y: hidden;
     }
 
+    nav div a {
+        padding-left: 0px;
+    }
+
     main {
         margin: 10px 0px 20px 0px;
     }
@@ -145,6 +149,11 @@ main section code {
     nav {
         border-left: 1px solid #000000;
     }
+
+    nav div a {
+        padding-left: 0px;
+    }
+
     main section {
         padding: 0px 16px;
     }
