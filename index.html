@@ -57,7 +57,9 @@
                 <ul>
                     <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
                     <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+                    <li>
+                        Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                    </li>
                 </ul>
             </section>
             <section id="javascript_and_java" class="main-section">
@@ -100,10 +102,14 @@
                 <p>This syntax can be used to declare both local and global variables.</p>
                 <p>By simply assigning it a value. For example,</p>
                 <code>x = 42.</code>
-                <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+                <p>
+                    This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+                </p>
                 <p>With the keyword let. For example,</p>
                 <code>let y = 13.</code>
-                <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+                <p>
+                    This syntax can be used to declare a block scope local variable. See Variable scope below.
+                </p>
             </section>
             <section id="variable_scope" class="main-section">
                 <header>Variable Scope</header>
@@ -143,9 +149,11 @@
                 <p>
                     You cannot declare a constant with the same name as a function or variable in the same scope. For example:
                 </p>
-                <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+                <code>
+                    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
                     WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-                    //statements }</code>
+                    //statements }
+                </code>
                 <p>
                     However, object attributes are not protected, so the following statement is executed without problems.
                 </p>
@@ -158,11 +166,15 @@
                     <li>Six data types that are primitives:
                         <ul>
                             <li>Boolean. true and false.</li>
-                            <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+                            <li>
+                                null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.
+                            </li>
                             <li>undefined. A top-level property whose value is undefined.</li>
                             <li>Number. 42 or 3.14159.</li>
                             <li>String. "Howdy"</li>
-                            <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                            <li>
+                                Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.
+                            </li>
                         </ul>
                     </li>
                     <li>And object</li>
@@ -183,16 +195,20 @@
                 <p>
                     You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
                 </p>
-                <code>if (condition_1) { statement_1; } else if (condition_2) {
+                <code>
+                    if (condition_1) { statement_1; } else if (condition_2) {
                     statement_2; } else if (condition_n) { statement_n; } else {
-                    statement_last; }</code>
+                    statement_last; }
+                </code>
                 <p>
                     In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:
                 </p>
-                <code>if (condition) { statement_1_runs_if_condition_is_true;
+                <code>
+                    if (condition) { statement_1_runs_if_condition_is_true;
                     statement_2_runs_if_condition_is_true; } else {
                     statement_3_runs_if_condition_is_false;
-                    statement_4_runs_if_condition_is_false; }</code>
+                    statement_4_runs_if_condition_is_false; }
+                </code>
                 <p>
                     It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
                 </p>
@@ -239,8 +255,12 @@
                 </p>
                 <ul>
                     <li>The name of the function.</li>
-                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
-                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                    <li>
+                        A list of arguments to the function, enclosed in parentheses and separated by commas.
+                    </li>
+                    <li>
+                        The JavaScript statements that define the function, enclosed in curly brackets, { }.
+                    </li>
                 </ul>
                 <p>For example, the following code defines a simple function named square:</p>
                 <code>function square(number) { return number * number; }</code>
